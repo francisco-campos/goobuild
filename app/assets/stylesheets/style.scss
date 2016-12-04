@@ -1,0 +1,20 @@
+header {
+    height: 50px;
+    width: 100%;
+    background: #999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.menu-left {
+    width: 200px;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    background-color: #666;
+}
+.content {
+    margin-left: 200px;
+    margin-top: 50px;
+    display: inline-block;
+}

@@ -1,5 +1,6 @@
 body {
   font-family: Verdana, sans-serif;
+  background-color: #eee;
 }
 h1, h2, h3, h4, h5 {
   font-family: 'Roboto', sans-serif;
@@ -8,13 +9,13 @@ h1, h2, h3, h4, h5 {
 header {
     height: 50px;
     width: 100%;
-    background: #999;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1001;
 }
 .content {
-    margin-left: 200px;
+    margin-left: 250px;
     margin-top: 50px;
     display: inline-block;
 }
@@ -22,6 +23,7 @@ header {
   margin: 0;
   padding: 0;
   display: block;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
 }
 .container-menu .navbar {
   border-radius: 0;
@@ -33,4 +35,18 @@ header {
 }
 .content-central {
   background-color: #eee;
+}
+.navbar-default {
+  background-color: #fff;
+  border-color: #e7e7e7;
+}
+.navbar-brand.logo {
+  margin-right: 100px;
+}
+ul.nav.navbar-nav {
+  float: right;
+}
+.form-control.search {
+  min-width: 250px;
+  width: 60%;
 }

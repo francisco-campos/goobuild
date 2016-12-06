@@ -11,21 +11,22 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Logotipo</a>
+          <%= link_to(root_path, :class => 'navbar-brand logo', :title => 'GooBuild') do %>
+            <%= image_tag('logo-goobuild.png', size: '114x20', alt: 'GooBuild') %>
+          <% end %>
         </div>
 
         <!-- Agrupar los enlaces de navegación, los formularios y cualquier
              otro elemento que se pueda ocultar al minimizar la barra -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-            <p class="navbar-text">Busca de acuerdo a tus aptitudes</p>
             <form class="navbar-form navbar-left" role="search">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Buscar">
+                <input type="text" class="form-control input-lg" placeholder="Buscar">
               </div>
               <button type="submit" class="btn btn-default">Enviar</button>
             </form>
-            <li class="active"><a href="#">Crea un Proyecto</a></li>
+            <li class=""><a href="#">Crea un Proyecto</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 Desarrollador <b class="caret"></b>

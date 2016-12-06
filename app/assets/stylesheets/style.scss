@@ -1,3 +1,10 @@
+body {
+  font-family: Verdana, sans-serif;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
 header {
     height: 50px;
     width: 100%;
@@ -6,15 +13,24 @@ header {
     top: 0;
     left: 0;
 }
-.menu-left {
-    width: 200px;
-    position: fixed;
-    top: 50px;
-    left: 0;
-    background-color: #666;
-}
 .content {
     margin-left: 200px;
     margin-top: 50px;
     display: inline-block;
+}
+.container-menu {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.container-menu .navbar {
+  border-radius: 0;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  border-radius: none;
+  background-color: #e7e7e7;
+  color: #333;
+}
+.content-central {
+  background-color: #eee;
 }

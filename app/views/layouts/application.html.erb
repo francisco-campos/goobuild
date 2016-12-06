@@ -3,20 +3,20 @@
   <head>
     <title>Goobuild</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>  
+  <body>
       <header>
-      Header
+      <%= render 'layouts/header' %>
       </header>
       <div class="menu-left">
-        Este sera el menu del sitio
+        <%= render 'layouts/sidebar' %>
       </div>
       <div class="content">
           <%= yield %>
-      </div>          
+      </div>
   </body>
 </html>

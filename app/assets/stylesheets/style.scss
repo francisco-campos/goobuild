@@ -1,3 +1,7 @@
+$break-small: 320px;
+$break-tablet: 768px;
+$break-large: 1200px;
+
 body {
   font-family: Verdana, sans-serif;
   background-color: #eee;
@@ -16,6 +20,9 @@ header {
 }
 .content {
     margin-left: 250px;
+    @media screen and (max-width: $break-tablet) {
+      margin-left: 0px;
+    }
     margin-top: 50px;
     display: inline-block;
 }
@@ -41,12 +48,29 @@ header {
   border-color: #e7e7e7;
 }
 .navbar-brand.logo {
-  margin-right: 100px;
+  margin-right: 0px;
+  @media screen and (max-width: $break-tablet) {
+    margin-right: 0px;
+  }
 }
 ul.nav.navbar-nav {
   float: right;
+  @media screen and (max-width: $break-tablet) {
+    float: none;
+  }
 }
 .form-control.search {
   min-width: 250px;
   width: 60%;
+}
+.btn-green.search {
+  position: relative;
+  left: -50px;
+  height: 30px;
+  border: 0;
+  background-color: #FFF;
+  color: #74bc60;
+}
+.navbar-form .form-control.search {
+  width: 300px;
 }

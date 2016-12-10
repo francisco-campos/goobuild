@@ -1,0 +1,36 @@
+<%= render 'shared/welcome' %>
+  <div class="container-fluid content-central">
+    <div class="row">
+      <div class="col-md-8">
+        <%= link_to 'Crear un nuevo proyecto', new_project_path, :class => 'btn btn-default btn-orange' %>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid content-central">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="margin40"></div>        
+        <h2>Últimos Proyectos disponibles</h2>
+        <p id="notice"><%= notice %></p>
+        
+        <% @projects.each do |project| %>
+          <div class="container-fluid content-central item-project">
+            <div class="row">
+              <div class="col-md-9">
+                <h3><%= link_to project.name, project_path(project) %></h3>
+                <p class="desc"><%= cut_description(project.description) %> </p>
+              </div>
+              <div class="col-md-3">
+                <p class="desc right top">
+                  Publicación: <%= format_date_publish(project.created_at) %>
+                </p>
+                <p class="desc right">Valor: US$2.000</p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        
+        
+      </div>
+    </div>
+  </div>

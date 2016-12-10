@@ -4,5 +4,9 @@ class HomeController < ApplicationController
   def index
     @message = "HOLA!"
   end
+  
+  def projects
+    
+  end
 
 end

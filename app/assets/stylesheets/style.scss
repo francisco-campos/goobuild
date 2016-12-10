@@ -5,11 +5,34 @@ $break-large: 1200px;
 body {
   font-family: Verdana, sans-serif;
   background-color: #eee;
+  font-size: 14px;
 }
 h1, h2, h3, h4, h5 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  color: #34465D;
 }
-
+h1, .h1 {
+  font-size: 2.5em;
+}
+h2, .h2 {
+  font-size: 2em;
+}
+h3, .h3 {
+  font-size: 1.6em;
+}
+p.desc {
+  font-size: 13px;
+}
+p.top {
+  margin-top: 10px;
+}
+p.right {
+  text-align: right;
+}
+p.left {
+  text-align: left;
+}
 header {
     height: 50px;
     width: 100%;
@@ -71,6 +94,30 @@ ul.nav.navbar-nav {
   background-color: #FFF;
   color: #74bc60;
 }
+.btn-green {
+  background: #FFF;
+  color: #74bc60;
+  border-color: #74bc60;
+}
+.btn-green:hover {
+  background: #74bc60;
+  color: #fff;
+  border-color: #fff;
+}
+.btn-orange {
+  background: #FFF;
+  color: #F2992C;
+  border-color: #F2992C;
+}
+.btn-orange:hover {
+  background: #F2992C;
+  color: #fff;
+  border-color: #fff;
+}
 .navbar-form .form-control.search {
   width: 300px;
+  font-size: 12px;
+}
+.margin40 {
+  margin: 40px 0;
 }

@@ -4,7 +4,7 @@ $break-large: 1200px;
 
 body {
   font-family: Verdana, sans-serif;
-  background-color: #eee;
+  background-color: #e9ebee;
   font-size: 14px;
 }
 h1, h2, h3, h4, h5 {
@@ -64,7 +64,7 @@ header {
   color: #333;
 }
 .content-central {
-  background-color: #eee;
+  
 }
 .navbar-default {
   background-color: #fff;
@@ -74,7 +74,7 @@ header {
   margin-right: 0px;
   @media screen and (max-width: $break-tablet) {
     margin-right: 0px;
-  }  
+  }
 }
 ul.nav.navbar-nav {
   float: right;

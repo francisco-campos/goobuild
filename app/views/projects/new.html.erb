@@ -1,5 +1,17 @@
-<h1>New Project</h1>
+<div class="container-fluid content-central">
+  <div class="row">
+      <div class="col-md-12">
+          <h1>Crear un nuevo proyecto</h1>
+          <p>Te ayudaremos para que puedas llegar a la mayor cantidad de profesionales ideales para
+            tu nuevo proyecto.</p>
+      </div>
+  </div>
 
-<%= render 'form', project: @project %>
+  <div class="row">
+    <div class="col-md-12">
+      <%= render 'form', project: @project %>
+    </div>
+  </div>
 
-<%= link_to 'Back', projects_path %>
+  <%= link_to 'Back', projects_path %>
+</div>

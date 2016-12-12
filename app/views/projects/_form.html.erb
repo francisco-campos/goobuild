@@ -1,37 +1,32 @@
+
 <%= form_for(project) do |f| %>
-  <% if project.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
-
-      <ul>
-      <% project.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+  
+  <div class="form-group">
+      <%= f.label :name, :class => '', :value => 'Nombre' %>
+      <%= f.text_field :name, :class => 'form-control input-lg', :placeholder => 'Nombre' %>
+      <%
+      if @project.errors[:name].count > 0
+          %><p class="help-block"><%= @project.errors[:name][0] %></p><%
+      else
+          %><p class="help-block">Debes seleccionar un nombre corto y preciso para captar la
+            atención de los usuarios.</p><%
+      end
+      %>
   </div>
-
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description %>
-  </div>
-
-  <div class="field">
-    <%= f.label :file %>
-    <%= f.text_field :file %>
-  </div>
-
-  <div class="field">
-    <%= f.label :duration %>
-    <%= f.text_field :duration %>
+  <div class="form-group">
+    <%= f.label :description, :value => 'Descripción' %>
+    <%= f.text_area :description, :class => 'form-control', :rows => 10 %>
+    <%
+    if @project.errors[:name].count > 0
+      %><p class="help-block"><%= @project.errors[:description][0] %></p><%
+    else
+      %><p class="help-block">Debes ingresar una descripción bien detallada de lo que necesitas,
+        incorporando alcances y resultado final esperado.</p><%
+    end
+    %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+      <%= f.submit :class => 'btn btn-default', :value => 'Publicar Proyecto' %>
   </div>
 <% end %>
